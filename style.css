@@ -3,6 +3,23 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content {
+    flex: 2;
+    margin-top: 15px;
+}
+
+.sidebar {
+    flex: 1;
+    margin-top: 15px;
+}
+
 .jumbotron {
     background-color: #0e076d;
     color: white;
@@ -25,10 +42,6 @@ body {
 .main-content p {
     font-size: 1.1em;
     color: #555;
-}
-
-.sidebar {
-    margin-top: 20px;
 }
 
 .messages {
@@ -70,23 +83,31 @@ body {
 .progress {
     height: 25px;
     margin-bottom: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .progress-bar-cool {
     background-color: #f61067;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: white;
 }
 
 .progress-bar-lame {
     background-color: #2ad392;
-}
-
-.btn-lg {
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
     color: white;
 }
 
 .btn {
     background-color: #f61067;
     border-color: #f61067;
+    color: white;
     transition: background-color 0.3s;
 }
 
@@ -95,17 +116,16 @@ body {
 }
 
 .btn-success {
-    background-color: #f61067;
+    background-color: #2ad392;
     margin-right: 10px;
 }
 
 .btn-danger {
     background-color: white;
-    border-color: #2ad392;
-    color: #2ad392;
+    border-color: #f61067;
+    color: #f61067;
 }
 
-/* Footer styling */
 .footer {
     background-color: #f8f8f8;
     padding: 20px;
@@ -115,20 +135,11 @@ body {
     font-size: 0.9em;
 }
 
-/* Responsive settings */
 @media (max-width: 768px) {
-    .jumbotron {
-        padding: 30px;
+    .container {
+        flex-direction: column;
     }
 
-    h1 {
-        font-size: 2.5em;
-    }
-
-    .vote {
-        margin-top: 15px;
-    }
-    
     .footer {
         font-size: 0.8em;
     }
