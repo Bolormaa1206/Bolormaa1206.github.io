@@ -3,62 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Video web site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="constainer">
-        <div class="header">
-            <div class="img-area">
-                <img src="homescreen.jpg" alt="1">
+
+<div class="jumbotron text-center">
+    <h1>Hello, world!</h1>
+    <p>WELCOME TO MY SITE</p>
+    <a href="#" class="btn btn-lg">Learn more</a>
+</div>
+
+<!-- Main content -->
+<div class="container">
+    <div class="row">
+        <!-- Left content -->
+        <div class="col-md-8">
+            <h2>Сүүлийн үеийн KPOP мэдээлэл</h2>
+            <p>
+                ROSE, Bruno Mars нарын хамтарсан “APT” дуу Солонгосын бүх том чартуудад нэгт бичигдэж RAK хийлээ. Анх удаа гадаад дуучны дуу ийм амжилтад хүрч байна даа 
+            </p>
+            <p>APT дууг эндээс сонсоно уу.</p>
+            <!-- Embedded video -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls>
+                    <source src="path/to/your-video.mp4" type="video/mp4">
+                    <iframe  src="https://www.youtube.com/embed/8Ebqe2Dbzls?si=Way1Kxv8dXemwx-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <h1>Б.Болормаа</h1>
-            <h3>МУИС-ийн Программ хангамж хөтөлбөрийн 2-р түвшний оюутан </h3>
+            
+            
         </div>
 
-        <div class="main">
-            <div class="left">
-                <h2>Хувийн мэдээлэл</h2>
-                <p><strong>Нэр:</strong>Болормаа</p>
-                <p><strong>Нас:</strong>20</p>
-                <p><strong>Email:</strong>bolormaabatbayr12@gmail.com</p>
-                <p><strong>Утасны дугаар:</strong>999408**</p>
-                <p><strong>SISI ID:</strong>22B1NUM53**</p>
-                <h2>Ур чадвар </h2>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>C/C++</li>
-                    <li>MySQL</li>
-                    <p>Тодорхой хэмжээнд ажиллах чадвар эзэмшсэн.</p>
-                </ul>
-                <h2>Боловсрол</h2>
-                <h3>Суралцсан сургууль</h3>
-                <p>2010-2022 онд Хөвсгөл аймгийн Дэлгэрмөрөн цогцолбор сургуульд бүрэн дунд боловсрол эзэмшин төгссөн.</p><br>
-                <h3>Одоогоор суралцаж буй сургууль</h3>
-                <p>2022 онд МУИС-д Программ хангамж хөтөлбөрөөр элсэн бакалаварын түвшинд суралцаж байгаа.</p>
+
+        <div class="col-md-4">
+            <div class="messages">
+                <h3>Сэтгэгдэл <span class="badge"></span></h3>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Санал хүсэлт  </div>
+                <div class="panel-body">
+                    <p>Дууны талаар ямар нэг сэтгэгдэл үлдээхийг хүсвэл энд бичнэ үү.</p>
+                    <input type="text" class="form-control" placeholder="Input your greeting...">
+                    <br>
+                    <button class="btn btn-primary btn-block">Send</button>
+                </div>
             </div>
 
-            <div class="rigth">
-                <h2>Гэр бүлийн мэдээлэл</h2>
-                <ul>
-                    <li>
-                        <h3>Аав</h3>
-                    </li>
-                    <p><strong>Нэр:</strong>Батбаяр</p>
-                    <p><strong>Мэргэжил:</strong>Хувиараа</p>
-                    <p><strong>Email:</strong>bolormaabatbayr12@gmail.com</p>
-                    <p><strong>Утасны дугаар:</strong>995085**</p>
-                    <li>
-                        <h3>Ээж</h3>
-                    </li>
-                    <p><strong>Нэр:</strong>Эрдэнэжаргал</p>
-                    <p><strong>Мэргэжил:</strong>Хувиараа</p>
-                    <p><strong>Email:</strong>bolormaabatbayr12@gmail.com</p>
-                    <p><strong>Утасны дугаар:</strong>995085**</p>
-                </ul><br>
+            <div class="vote">
+                <p>Please vote! What do you think about this song? Check out the bid progress bar below!</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-cool" style="width: 80%;">Cool</div>
+                    <div class="progress-bar progress-bar-lame" style="width: 20%;">Lame</div>
+                </div>
+                <button class="btn btn-success">Cool</button>
+                <button class="btn btn-danger">lame</button>
             </div>
         </div>
     </div>
-    
+</div>
+
+<footer class="footer">
+    <p> 2024 оны 10 сарын 21-ны өдөр</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>

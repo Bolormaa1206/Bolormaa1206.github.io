@@ -1,98 +1,135 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: montserrat;
+body {
+    padding-top: 50px;
+    font-family: Arial, sans-serif;
 }
-body{
-    background: #00b6c4;
-}
-.constainer{
-    background: #f5f5f5;
-    max-width: 800px;
-    margin: 60px auto;
-    height: 1250px;
-    padding: 20px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
-}
-.header{
+
+.jumbotron {
+    background-color: #0e076d;
+    color: white;
+    padding: 50px;
     text-align: center;
 }
-.header h1{
-    margin-bottom: 10px;
 
+.jumbotron .btn {
+    background-color: #ff0072;
+    border-color: #352ba5;
 }
-.header h3{
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
+
+.main-content h2 {
+    margin-top: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
 }
-.img-area{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 25px auto;
-    border: 5px groove deepskyblue;
+
+.main-content p {
+    font-size: 1.1em;
+    color: #555;
 }
-.img-area img{
-    width: 100%;
+
+.sidebar {
+    margin-top: 20px;
 }
-.main{
-    display: flex;
-    flex-wrap: wrap;
-}
-.left{
-    flex: 1;
-    padding: 30px;
-}
-.left p{
-    line-height: 2;
-}
-.left ul li{
-    line-height: 2;
-}
-h2{
-    background: #00b6c4;
-    padding: 15px;
+
+.messages {
+    background-color: #f61067;
     color: white;
-    margin: 30px 0;
-    font-size: 20px;
-    border-radius: 0 50px 50px 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
 }
-.rigth{
-    flex: 1;
-    padding: 30px;
+
+.panel {
+    border-color: #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.rigth h3{
+
+.panel-heading {
+    background-color: #f7f7f7;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.panel-body {
+    font-size: 1em;
+    padding: 15px;
+}
+
+.panel-body input {
+    font-size: 1em;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.vote {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.progress {
+    height: 25px;
     margin-bottom: 15px;
 }
-.rigth p{
-    line-height: 2.9;
-}
-.rigth ul li{
-    line-height: 2;
+
+.progress-bar-cool {
+    background-color: #f61067;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .constainer{
-        width: 95%;
-        height: auto;
-    }
-    h2{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 600px){
-    .main{
-        flex-direction: column;
-    }
-    .left, .rigth{
-        flex: none;
-        width: 100%;
-    } 
-    h2{
-        font-size: 15px;
-    }
+.progress-bar-lame {
+    background-color: #2ad392;
 }
 
+.btn-lg {
+    color: white;
+}
+
+.btn {
+    background-color: #f61067;
+    border-color: #f61067;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff0072;
+}
+
+.btn-success {
+    background-color: #f61067;
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background-color: white;
+    border-color: #2ad392;
+    color: #2ad392;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* Responsive settings */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .vote {
+        margin-top: 15px;
+    }
+    
+    .footer {
+        font-size: 0.8em;
+    }
+}
